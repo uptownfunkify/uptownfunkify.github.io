@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" href="img/favicon.png">
 
 </head>
-<body id="body2" style="margin: 120px;" onload="disco()">
+<body id="body2" onload="disco()">
 
   <div class="top-bar">tip: if you click around the page the background will get uptown funkier (-:<br>(warning: that means it will change colors faster)</div>
 
@@ -23,7 +23,7 @@
     <div class="row">
       <div class="twelve columns title">
         <h4>UptownFunkify!</h4>
-              <p class="play-btn-p" id="playvideo" onclick="refreshIframe();"><i class="fa fa-play-circle-o play-btn"></i>
+              <p class="play-btn-p" id="playvideo" onclick="refreshIframe();"><i class="fa fa-play-circle-o play-btn" style="margin: 120px;"></i>
             </p>
               <p class="stop-btn playSound" id="stopvideo" onclick="stopIframe();">stop</i></p>
             <div class='shareaholic-canvas' style=" margin-bottom: -10px;" data-app='share_buttons' data-app-id='15441598'></div>
@@ -32,7 +32,7 @@
 
     </div>
   </div>
-<div class="bottom-bar"><a target="_blank" href="https://www.youtube.com/watch?v=OPf0YbXqDm0">link to official youtube music video</i></a> - created by <a href="http://macleodsawyer.com/">macleod sawyer</a> - follow me: <a href="https://twitter.com/mxsawyer">twitter</a> - <a href="https://mxcleod.com/">tumblr</a> </div>
+<div class="bottom-bar"><a target="_blank" href="https://www.youtube.com/watch?v=7Ya2U8XN_Zw">link to official youtube music video</i></a> - created by <a href="http://macleodsawyer.com/">macleod sawyer</a> - follow me: <a href="https://twitter.com/mxsawyer">twitter</a> - <a href="https://mxcleod.com/">tumblr</a> </div>
 
 
 <script>
@@ -52,7 +52,7 @@
 <script>
 $("#playvideo").click(function(){
 var video = $("#playerid").attr("src");
-$("#playerid").attr("src","https://www.youtube.com/embed/OPf0YbXqDm0?autoplay=1&loop=1&playlist=OPf0YbXqDm0");
+$("#playerid").attr("src","https://www.youtube.com/embed/7Ya2U8XN_Zw?autoplay=1&loop=1&playlist=7Ya2U8XN_Zw");
 $("#playerid").attr("src",video);
  });
 
@@ -71,7 +71,7 @@ document.getElementsByTagName("body")[0].setAttribute("class", "body3");
 <script>
 function refreshIframe() {
     var ifr = document.getElementsByName('Right')[0];
-    ifr.src = ("https://www.youtube.com/embed/M1F0lBnsnkE?autoplay=1&loop=1&playlist=M1F0lBnsnkE");
+    ifr.src = ("https://www.youtube.com/embed/7Ya2U8XN_Zw?autoplay=1&loop=1&playlist=7Ya2U8XN_Zw");
 }
 
 function stopIframe() {
