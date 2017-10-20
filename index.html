@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>UptownFunkify! The Emergency Uptown Funk Button!</title>
+  <meta name="description" content="Uptown Funkify your life! Make your life instantly awesome and funky with this site!">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/disco.js"></script>
+
+
+  <link rel="icon" type="image/png" href="img/favicon.png">
+
+</head>
+<body id="body2" onload="disco()">
+
+  <div class="top-bar">tip: if you click around the page the background will get uptown funkier (-:<br>(warning: that means it will change colors faster)</div>
+
+<div class="container">
+    <div class="row">
+      <div class="twelve columns title">
+        <h4>UptownFunkify!</h4>
+              <p class="play-btn-p" id="playvideo" onclick="refreshIframe();"><i class="fa fa-play-circle-o play-btn"></i>
+            </p>
+              <p class="stop-btn playSound" id="stopvideo" onclick="stopIframe();">stop</i></p>
+            <div class='shareaholic-canvas' style=" margin-bottom: -10px;" data-app='share_buttons' data-app-id='15441598'></div>
+      </center>
+        </div>
+
+    </div>
+  </div>
+<div class="bottom-bar"><a target="_blank" href="https://www.youtube.com/watch?v=OPf0YbXqDm0">link to official youtube music video</i></a> - created by <a href="http://macleodsawyer.com/">macleod sawyer</a> - follow me: <a href="https://twitter.com/mxsawyer">twitter</a> - <a href="https://mxcleod.com/">tumblr</a> </div>
+
+
+<script>
+        $(document).ready(function() {
+        var obj = document.createElement("audio");
+        obj.setAttribute("src", "sound/stop.wav");
+        $.get();
+
+        $(".playSound").click(function() {
+            obj.play();
+        });
+    });
+    </script>
+
+<iframe id="playerid" name="Right" width="1" height="1" frameborder="0" allowtransparency="true" allowfullscreen></iframe>
+
+<script>
+$("#playvideo").click(function(){
+var video = $("#playerid").attr("src");
+$("#playerid").attr("src","https://www.youtube.com/embed/OPf0YbXqDm0?autoplay=1&loop=1&playlist=OPf0YbXqDm0");
+$("#playerid").attr("src",video);
+ });
+
+$("#stopvideo").click(function(){
+// $("#playerid").attr("src","https://www.youtube.com/embed/7Ya2U8XN_Zw");
+// $("#playerid").attr("src",stopvideo);
+document.getElementsByTagName("body")[0].setAttribute("class", "body2");
+    document.getElementById("stopvideo").innerHTML = "stop";
+ });
+
+$("#playvideo").click(function(){
+document.getElementsByTagName("body")[0].setAttribute("onclick", "disco()");
+document.getElementsByTagName("body")[0].setAttribute("class", "body3");
+ });
+</script>
+<script>
+function refreshIframe() {
+    var ifr = document.getElementsByName('Right')[0];
+    ifr.src = ("https://www.youtube.com/embed/M1F0lBnsnkE?autoplay=1&loop=1&playlist=M1F0lBnsnkE");
+}
+
+function stopIframe() {
+    var ifr = document.getElementsByName('Right')[0];
+    ifr.src = ("null");
+}
+
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45996272-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
